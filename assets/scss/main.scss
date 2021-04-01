@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;800&family=Lobster&family=Stick&display=swap');
+@import './variables';
+@import './reset';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr repeat(10, minmax(min-content, 120px)) 1fr;
+  grid-template-rows: max-content repeat(20, min-content);
+}
+
+.xl-container {
+  display: grid;
+  grid-template-columns:
+    minmax(3rem, 1fr) repeat(10, minmax(min-content, 140px))
+    minmax(3rem, 1fr);
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+
+  &-primary {
+    background-color: $color-5;
+    color: $color-4;
+
+    &:hover,
+    &:active {
+      background-color: darken($color: $color-5, $amount: 20%);
+      color: lighten($color: $color-4, $amount: 50%);
+    }
+  }
+
+  &-secondary {
+    background-color: $color-4;
+    color: $color-1;
+
+    &:hover,
+    &:active {
+      background-color: darken($color: $color-4, $amount: 20%);
+      color: darken($color: $color-1, $amount: 50%);
+    }
+  }
+}
