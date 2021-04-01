@@ -6,7 +6,10 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr repeat(10, minmax(min-content, 120px)) 1fr;
+  grid-template-columns: minmax(0, 1fr) repeat(10, minmax(min-content, 120px)) minmax(
+      0,
+      1fr
+    );
   grid-template-rows: max-content repeat(20, min-content);
 }
 
@@ -43,4 +46,10 @@
       color: darken($color: $color-1, $amount: 50%);
     }
   }
+}
+
+.card {
+  padding: 2rem;
+  box-shadow: 5px 5px 10px $color-3;
+  background-color: #fff;
 }

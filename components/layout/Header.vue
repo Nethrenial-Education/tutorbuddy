@@ -11,19 +11,19 @@
     <nav class="navigation">
       <ul>
         <li>
-          <nuxt-link to="/">Home</nuxt-link>
+          <nuxt-link to="/" name="home link">Home</nuxt-link>
         </li>
         <li>
-          <a href="#features">Features</a>
+          <a href="#features" name="link to features">Features</a>
         </li>
         <li>
-          <a href="#pricing">Pricing</a>
+          <a href="#pricing" name="link to pricing">Pricing</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" name="link to contact">Contact</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about" name="link to about">About</a>
         </li>
       </ul>
     </nav>
@@ -38,16 +38,19 @@ $color-4: #f4f4f2;
 $color-5: #ff3b3f;
 
 header#header {
-  background-color: $color-3;
+  background-color: $color-4;
   position: fixed;
+  z-index: 2;
+  box-shadow: 0.5rem 0 2rem #000;
   .logo {
     align-self: center;
     grid-column: 2 / 5;
     display: flex;
     &-img {
       align-self: center;
-      width: 64px;
-      height: 64px;
+      width: 6rem;
+      height: 6rem;
+      margin: 0.2rem 0;
     }
 
     &-text {
@@ -76,14 +79,13 @@ header#header {
           color: $color-1;
           padding: 1rem 2rem;
           transition: all 0.1s linear;
+          border-bottom: 5px solid transparent;
 
           &:hover,
           &:active,
           &:focus {
-            background-color: $color-5;
-            color: $color-3;
-            border-radius: 100rem;
-            box-shadow: 5px 5px 10px $color-2;
+            color: $color-5;
+            border-bottom: 5px solid $color-5;
           }
         }
       }

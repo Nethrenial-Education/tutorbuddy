@@ -15,7 +15,13 @@ export default {
           "TutorBuddy let's you manage your students profiles easily.Managing Your income,costs and distributing resources to your students is now easier than ever!",
       },
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: '/images/icon.png' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/images/icon.png',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -31,6 +37,30 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa',
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: [
+              'faChalkboardTeacher',
+              'faFolderOpen',
+              'faHandHoldingUsd',
+              'faBookReader',
+              'faCoins',
+              'faPiggyBank',
+            ],
+          },
+          { set: '@fortawesome/free-brands-svg-icons', icons: ['faGithub'] },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: ['faLightbulb'],
+          },
+        ],
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

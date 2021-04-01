@@ -4,8 +4,12 @@
     <div v-if="count === 0">&nbsp;</div>
     <h2>{{ phrase }}</h2>
     <div class="buttons">
-      <a href="#features" class="btn btn-secondary">Learn More</a>
-      <a href="/download" class="btn btn-primary">Download</a>
+      <a href="#features" class="btn btn-secondary" name="click to learn more"
+        >Learn More</a
+      >
+      <a href="/download" class="btn btn-primary" name="click to download"
+        >Download</a
+      >
     </div>
   </section>
 </template>
@@ -14,21 +18,23 @@
 export default {
   data() {
     return {
-      phrase: 'Easily Manage Your Classes!',
+      phrase: '',
       phrases: 'Easily Manage Your Classes!',
 
       count: 1,
     }
   },
   mounted() {
-    setInterval(() => {
-      this.phrase = this.phrases.slice(0, this.count)
-      if (this.count === this.phrases.length) {
-        this.count = 1
-      } else {
-        this.count++
-      }
-    }, 100)
+    setTimeout(() => {
+      setInterval(() => {
+        this.phrase = this.phrases.slice(0, this.count) + '...'
+        if (this.count === this.phrases.length) {
+          this.count = 1
+        } else {
+          this.count++
+        }
+      }, 100)
+    }, 1000)
   },
 }
 </script>
@@ -61,7 +67,6 @@ section#showcase {
     text-align: center;
     opacity: 0;
     animation: slide-right 1s ease-out forwards;
-    animation-delay: 0.2s;
 
     span {
       color: $color-5;
@@ -77,7 +82,6 @@ section#showcase {
   .buttons {
     opacity: 0;
     animation: slide-up 1s ease-out forwards;
-    animation-delay: 0.2s;
     text-align: center;
     margin-top: 5rem;
     .btn {

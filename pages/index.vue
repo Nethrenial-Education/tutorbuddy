@@ -2,6 +2,7 @@
   <div class="container">
     <layout-header></layout-header>
     <layout-showcase></layout-showcase>
+    <layout-features></layout-features>
   </div>
 </template>
 
@@ -19,5 +20,9 @@ export default {}
   grid-column: 1 / -1;
   grid-row: 1 / 10;
   height: 100vh;
+}
+
+#features {
+  grid-column: 2 / 12;
 }
 </style>
