@@ -88,7 +88,6 @@ $color-5: #ff3b3f;
     .icon {
       font-size: 10rem;
       color: $color-5;
-      animation: color 1s linear infinite;
     }
 
     h2 {
@@ -102,18 +101,6 @@ $color-5: #ff3b3f;
       text-align: center;
       color: $color-1;
     }
-  }
-}
-
-@keyframes color {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
   }
 }
 </style>
