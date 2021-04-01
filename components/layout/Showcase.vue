@@ -18,16 +18,51 @@ export default {
   data() {
     return {
       phrase: '...',
-      phrases: 'Easily Manage Your Tution Classes!',
+      phrases: [
+        'Easily manage your classes',
+        'Keep a record of every student',
+        'Distribute study materials',
+        'Keepa a track of student payments',
+        'Manage your income and costs',
+        'Save money with our affordable plans',
+      ],
 
       count: 1,
+      phraseCount: 0,
     }
   },
   mounted() {
+    // setTimeout(() => {
+    //   setInterval(() => {
+    //     if (this.phrase.length === this.phrases[this.phraseCount].length + 3) {
+    //       if (this.phraseCount !== 5) {
+    //         this.phraseCount++
+    //       } else {
+    //         this.phraseCount = 0
+    //       }
+    //     } else {
+    //       this.phrase =
+    //         this.phrases[this.phraseCount].slice(0, this.count) + '...'
+    //       if (this.count === this.phrases[this.phraseCount].length) {
+    //         this.count = 1
+    //       } else {
+    //         this.count++
+    //       }
+    //     }
+    //   }, 100)
+    // }, 1000)
     setTimeout(() => {
       setInterval(() => {
-        this.phrase = this.phrases.slice(0, this.count) + '...'
-        if (this.count === this.phrases.length) {
+        if (this.phrase.length === this.phrases[this.phraseCount].length + 3) {
+          if (this.phraseCount !== 5) {
+            this.phraseCount++
+          } else {
+            this.phraseCount = 0
+          }
+        }
+        this.phrase =
+          this.phrases[this.phraseCount].slice(0, this.count) + '...'
+        if (this.count === this.phrases[this.phraseCount].length) {
           this.count = 1
         } else {
           this.count++
