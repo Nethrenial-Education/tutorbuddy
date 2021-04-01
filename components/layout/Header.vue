@@ -47,7 +47,7 @@ header#header {
     &-img {
       align-self: center;
       width: 64px;
-      height: auto;
+      height: 64px;
     }
 
     &-text {
