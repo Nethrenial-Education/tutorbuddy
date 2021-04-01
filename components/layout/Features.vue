@@ -65,7 +65,7 @@ $color-4: #f4f4f2;
 $color-5: #ff3b3f;
 
 #features {
-  margin: 3rem auto;
+  margin: 5rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-row: 1fr 1fr;
