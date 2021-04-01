@@ -18,11 +18,11 @@ export default {}
 }
 #showcase {
   grid-column: 1 / -1;
-  grid-row: 1 / 10;
+  grid-row: 2 / 3;
   height: 100vh;
 }
-
 #features {
   grid-column: 2 / 12;
+  grid-row: 3 / span 10;
 }
 </style>

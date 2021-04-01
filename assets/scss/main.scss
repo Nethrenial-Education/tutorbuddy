@@ -11,7 +11,7 @@
       0,
       1fr
     );
-  grid-template-rows: max-content repeat(20, min-content);
+  grid-template-rows: max-content calc(100vh-6rem) repeat(5, min-content);
 }
 
 .xl-container {
