@@ -48,9 +48,10 @@ header#header {
     display: flex;
     &-img {
       align-self: center;
-      width: 6rem;
-      height: 6rem;
-      margin: 0.2rem 0;
+      width: 4rem;
+      height: 4rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
 
     &-text {

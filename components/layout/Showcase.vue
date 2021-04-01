@@ -1,7 +1,6 @@
 <template>
   <section id="showcase">
     <h1><span>Tutor</span>Buddy</h1>
-    <div v-if="count === 0">&nbsp;</div>
     <h2>{{ phrase }}</h2>
     <div class="buttons">
       <a href="#features" class="btn btn-secondary" name="click to learn more"
@@ -18,8 +17,8 @@
 export default {
   data() {
     return {
-      phrase: '',
-      phrases: 'Easily Manage Your Classes!',
+      phrase: '...',
+      phrases: 'Easily Manage Your Tution Classes!',
 
       count: 1,
     }
@@ -82,7 +81,9 @@ section#showcase {
   .buttons {
     opacity: 0;
     animation: slide-up 1s ease-out forwards;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5rem;
     .btn {
       margin-right: 2rem;
