@@ -154,5 +154,25 @@ $color-5: #ff3b3f;
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .testimonial {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+  }
 }
 </style>

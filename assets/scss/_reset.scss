@@ -11,6 +11,12 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Dosis', sans-serif;
   background-color: $color-4;

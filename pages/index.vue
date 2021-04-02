@@ -4,6 +4,7 @@
     <layout-showcase></layout-showcase>
     <layout-features></layout-features>
     <layout-testimonials></layout-testimonials>
+    <layout-pricing></layout-pricing>
   </div>
 </template>
 
@@ -40,5 +41,10 @@ export default {}
 #testimonials {
   grid-column: 1 / -1;
   grid-row: 4 / span 1;
+}
+
+#pricing {
+  grid-column: 2 / 12;
+  grid-row: 5 / span 1;
 }
 </style>
