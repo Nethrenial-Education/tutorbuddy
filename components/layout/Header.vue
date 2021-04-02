@@ -14,21 +14,59 @@
           <nuxt-link to="/" name="home link">Home</nuxt-link>
         </li>
         <li>
-          <a href="#features" name="link to features">Features</a>
+          <a
+            href="#features"
+            name="link to features"
+            @click="clickHandler($event)"
+            >Features</a
+          >
         </li>
         <li>
-          <a href="#pricing" name="link to pricing">Pricing</a>
+          <a
+            href="#pricing"
+            name="link to pricing"
+            @click="clickHandler($event)"
+            >Pricing</a
+          >
         </li>
         <li>
-          <a href="#contact" name="link to contact">Contact</a>
+          <a
+            href="#contact"
+            name="link to contact"
+            @click="clickHandler($event)"
+            >Contact</a
+          >
         </li>
         <li>
-          <a href="#about" name="link to about">About</a>
+          <a href="#about" name="link to about" @click="clickHandler($event)"
+            >About</a
+          >
         </li>
       </ul>
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  methods: {
+    clickHandler(event) {
+      event.preventDefault()
+      const href = event.target.getAttribute('href')
+      const offsetTop = document.querySelector(href).offsetTop - 100
+
+      scroll({
+        top: offsetTop,
+        behavior: 'smooth',
+      })
+
+      // document.querySelector(href).scrollIntoView({
+      //   behaviour: 'smooth',
+      // })
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 $color-1: #495464;

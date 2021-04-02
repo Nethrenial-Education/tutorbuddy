@@ -2,7 +2,7 @@
   <section id="features">
     <div class="feature">
       <fa icon="chalkboard-teacher" class="icon"></fa>
-      <h2>Easily Manage your classes!</h2>
+      <h2>Easily Manage your classes</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
@@ -11,7 +11,7 @@
     </div>
     <div class="feature">
       <fa icon="folder-open" class="icon"></fa>
-      <h2>Keep a profile on every single student.</h2>
+      <h2>Keep a profile on every single student</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
@@ -20,7 +20,7 @@
     </div>
     <div class="feature">
       <fa icon="book-reader" class="icon"></fa>
-      <h2>Distribute study materials securely.</h2>
+      <h2>Distribute study materials securely</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
@@ -29,7 +29,7 @@
     </div>
     <div class="feature">
       <fa icon="hand-holding-usd" class="icon"></fa>
-      <h2>Keep track of student payments.</h2>
+      <h2>Keep track of student payments</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
@@ -38,7 +38,7 @@
     </div>
     <div class="feature">
       <fa icon="coins" class="icon"></fa>
-      <h2>Manage your income and costs.</h2>
+      <h2>Manage your income and costs</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
@@ -46,8 +46,8 @@
       </p>
     </div>
     <div class="feature">
-      <fa icon="piggy-bank" class="icon"></fa>
-      <h2>Save money with our affordable plans.</h2>
+      <fa icon="mobile" class="icon"></fa>
+      <h2>Use our simple yet feature rich mobile apps</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.

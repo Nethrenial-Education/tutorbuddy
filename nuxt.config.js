@@ -50,7 +50,7 @@ export default {
               'faHandHoldingUsd',
               'faBookReader',
               'faCoins',
-              'faPiggyBank',
+              'faMobile',
             ],
           },
           { set: '@fortawesome/free-brands-svg-icons', icons: ['faGithub'] },

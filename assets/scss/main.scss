@@ -5,14 +5,6 @@
 @import './variables';
 @import './reset';
 
-.container {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) repeat(10, minmax(min-content, 120px)) minmax(
-      0,
-      1fr
-    );
-  grid-template-rows: max-content calc(100vh-6rem) repeat(5, min-content);
-}
 
 .xl-container {
   display: grid;

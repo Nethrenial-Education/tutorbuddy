@@ -3,6 +3,7 @@
     <layout-header></layout-header>
     <layout-showcase></layout-showcase>
     <layout-features></layout-features>
+    <layout-testimonials></layout-testimonials>
   </div>
 </template>
 
@@ -11,9 +12,18 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) repeat(10, minmax(min-content, 120px)) minmax(
+      0,
+      1fr
+    );
+  grid-template-rows: 6rem calc(100vh-6rem) repeat(20, 1fr);
+}
+
 #header {
   grid-column: 1 / -1;
-  grid-row: 1 / 2;
+  grid-row: 1/ 2;
   width: 100vw;
 }
 #showcase {
@@ -23,6 +33,11 @@ export default {}
 }
 #features {
   grid-column: 2 / 12;
-  grid-row: 3 / span 10;
+  grid-row: 3 / 4;
+}
+
+#testimonials {
+  grid-column: 1 / -1;
+  grid-row: 4 /5;
 }
 </style>

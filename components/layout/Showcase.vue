@@ -3,7 +3,11 @@
     <h1><span>Tutor</span>Buddy</h1>
     <h2>{{ phrase }}</h2>
     <div class="buttons">
-      <a href="#features" class="btn btn-secondary" name="click to learn more"
+      <a
+        href="#features"
+        class="btn btn-secondary"
+        name="click to learn more"
+        @click="clickHandler($event)"
         >Learn More</a
       >
       <a href="/download" class="btn btn-primary" name="click to download"
@@ -22,7 +26,7 @@ export default {
         'Easily manage your classes',
         'Keep a record of every student',
         'Distribute study materials',
-        'Keepa a track of student payments',
+        'Keep a track of student payments',
         'Manage your income and costs',
         'Save money with our affordable plans',
       ],
@@ -32,25 +36,6 @@ export default {
     }
   },
   mounted() {
-    // setTimeout(() => {
-    //   setInterval(() => {
-    //     if (this.phrase.length === this.phrases[this.phraseCount].length + 3) {
-    //       if (this.phraseCount !== 5) {
-    //         this.phraseCount++
-    //       } else {
-    //         this.phraseCount = 0
-    //       }
-    //     } else {
-    //       this.phrase =
-    //         this.phrases[this.phraseCount].slice(0, this.count) + '...'
-    //       if (this.count === this.phrases[this.phraseCount].length) {
-    //         this.count = 1
-    //       } else {
-    //         this.count++
-    //       }
-    //     }
-    //   }, 100)
-    // }, 1000)
     setTimeout(() => {
       setInterval(() => {
         if (this.phrase.length === this.phrases[this.phraseCount].length + 3) {
@@ -69,6 +54,22 @@ export default {
         }
       }, 100)
     }, 1000)
+  },
+  methods: {
+    clickHandler(event) {
+      event.preventDefault()
+      const href = event.target.getAttribute('href')
+      const offsetTop = document.querySelector(href).offsetTop - 100
+
+      scroll({
+        top: offsetTop,
+        behavior: 'smooth',
+      })
+
+      // document.querySelector(href).scrollIntoView({
+      //   behaviour: 'smooth',
+      // })
+    },
   },
 }
 </script>
