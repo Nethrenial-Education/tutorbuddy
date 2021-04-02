@@ -18,26 +18,27 @@ export default {}
       0,
       1fr
     );
-  grid-template-rows: 6rem calc(100vh-6rem) repeat(20, 1fr);
 }
+
+//grid-template-rows: 6rem calc(100vh-6rem) repeat(20, 1fr);
 
 #header {
   grid-column: 1 / -1;
-  grid-row: 1/ 2;
+  grid-row: 1 / span 1;
   width: 100vw;
 }
 #showcase {
   grid-column: 1 / -1;
-  grid-row: 2 / 3;
+  grid-row: 2 / span 1;
   height: 100vh;
 }
 #features {
   grid-column: 2 / 12;
-  grid-row: 3 / 4;
+  grid-row: 3 / span 1;
 }
 
 #testimonials {
   grid-column: 1 / -1;
-  grid-row: 4 /5;
+  grid-row: 4 / span 1;
 }
 </style>

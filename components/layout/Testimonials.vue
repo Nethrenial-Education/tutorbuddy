@@ -87,7 +87,6 @@ $color-5: #ff3b3f;
 
   .testimonial {
     width: 100%;
-    max-width: 1200px;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1rem;
