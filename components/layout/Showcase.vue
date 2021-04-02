@@ -86,7 +86,7 @@ section#showcase {
       rgba(#000, 0.7),
       rgba(#000, 0.7)
     ),
-    url('/images/hero-optimized.jpg');
+    url('/images/hero-optimized-min.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

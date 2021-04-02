@@ -53,11 +53,6 @@ export default {
               'faMobile',
             ],
           },
-          { set: '@fortawesome/free-brands-svg-icons', icons: ['faGithub'] },
-          {
-            set: '@fortawesome/free-regular-svg-icons',
-            icons: ['faLightbulb'],
-          },
         ],
       },
     ],
