@@ -1,60 +1,63 @@
 <template>
-  <section id="features">
-    <div class="feature">
-      <fa icon="chalkboard-teacher" class="icon"></fa>
-      <h2>Easily Manage your classes</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
-        Minima dicta eligendi officia, consequatur enim id voluptate?
-      </p>
-    </div>
-    <div class="feature">
-      <fa icon="folder-open" class="icon"></fa>
-      <h2>Keep a profile on every single student</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
-        Minima dicta eligendi officia, consequatur enim id voluptate?
-      </p>
-    </div>
-    <div class="feature">
-      <fa icon="book-reader" class="icon"></fa>
-      <h2>Distribute study materials securely</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
-        Minima dicta eligendi officia, consequatur enim id voluptate?
-      </p>
-    </div>
-    <div class="feature">
-      <fa icon="hand-holding-usd" class="icon"></fa>
-      <h2>Keep track of student payments</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
-        Minima dicta eligendi officia, consequatur enim id voluptate?
-      </p>
-    </div>
-    <div class="feature">
-      <fa icon="coins" class="icon"></fa>
-      <h2>Manage your income and costs</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
-        Minima dicta eligendi officia, consequatur enim id voluptate?
-      </p>
-    </div>
-    <div class="feature">
-      <fa icon="mobile" class="icon"></fa>
-      <h2>Use our simple yet feature rich mobile apps</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
-        Minima dicta eligendi officia, consequatur enim id voluptate?
-      </p>
-    </div>
-  </section>
+  <div class="features">
+    <h2>Features</h2>
+    <section id="features">
+      <div class="feature">
+        <fa icon="chalkboard-teacher" class="icon"></fa>
+        <h2>Easily Manage your classes</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
+          Minima dicta eligendi officia, consequatur enim id voluptate?
+        </p>
+      </div>
+      <div class="feature">
+        <fa icon="folder-open" class="icon"></fa>
+        <h2>Keep a profile on every single student</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
+          Minima dicta eligendi officia, consequatur enim id voluptate?
+        </p>
+      </div>
+      <div class="feature">
+        <fa icon="book-reader" class="icon"></fa>
+        <h2>Distribute study materials securely</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
+          Minima dicta eligendi officia, consequatur enim id voluptate?
+        </p>
+      </div>
+      <div class="feature">
+        <fa icon="hand-holding-usd" class="icon"></fa>
+        <h2>Keep track of student payments</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
+          Minima dicta eligendi officia, consequatur enim id voluptate?
+        </p>
+      </div>
+      <div class="feature">
+        <fa icon="coins" class="icon"></fa>
+        <h2>Manage your income and costs</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
+          Minima dicta eligendi officia, consequatur enim id voluptate?
+        </p>
+      </div>
+      <div class="feature">
+        <fa icon="mobile" class="icon"></fa>
+        <h2>Use our simple yet feature rich mobile apps</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          perferendis beatae voluptatibus at temporibus earum nesciunt pariatur.
+          Minima dicta eligendi officia, consequatur enim id voluptate?
+        </p>
+      </div>
+    </section>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -64,9 +67,22 @@ $color-3: #e8e8e8;
 $color-4: #f4f4f2;
 $color-5: #ff3b3f;
 
+.features {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 4rem;
+    color: $color-1;
+    margin-bottom: 4rem;
+  }
+}
+
 #features {
   display: grid;
-  padding: 10rem 0;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   justify-items: center;
   align-items: center;

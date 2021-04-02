@@ -7,6 +7,27 @@
   backface-visibility: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color-4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-5;
+  border-radius: 50rem;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -20,6 +41,7 @@ html {
 body {
   font-family: 'Dosis', sans-serif;
   background-color: $color-4;
+  overflow-x: hidden;
 }
 
 h1,

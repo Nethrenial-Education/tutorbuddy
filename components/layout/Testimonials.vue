@@ -1,74 +1,77 @@
 <template>
-  <section id="testimonials">
-    <div class="testimonial t-1">
-      <div class="avatar">
-        <div class="img"></div>
+  <div class="testimonials">
+    <h2>See what our customers have to say !</h2>
+    <section id="testimonials">
+      <div class="testimonial t-1">
+        <div class="avatar">
+          <div class="img"></div>
+        </div>
+        <div class="text">
+          <h3>John Aguilar</h3>
+          <p>
+            <q>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloribus incidunt temporibus, alias consequatur obcaecati magnam
+              harum. Cupiditate quae velit, molestias quisquam ullam quaerat
+              veniam corrupti ipsa. Dolores quisquam deleniti quos sequi? Quam
+              dolorem debitis inventore.</q
+            >
+          </p>
+        </div>
       </div>
-      <div class="text">
-        <h3>John Aguilar</h3>
-        <p>
-          <q>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-            incidunt temporibus, alias consequatur obcaecati magnam harum.
-            Cupiditate quae velit, molestias quisquam ullam quaerat veniam
-            corrupti ipsa. Dolores quisquam deleniti quos sequi? Quam dolorem
-            debitis inventore.</q
-          >
-        </p>
+      <div class="testimonial t-2">
+        <div class="avatar">
+          <div class="img"></div>
+        </div>
+        <div class="text">
+          <h3>Hans Christian</h3>
+          <p>
+            <q>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloribus incidunt temporibus, alias consequatur obcaecati magnam
+              harum. Cupiditate quae velit, molestias quisquam ullam quaerat
+              veniam corrupti ipsa. Dolores quisquam deleniti quos sequi? Quam
+              dolorem debitis inventore.</q
+            >
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="testimonial t-2">
-      <div class="avatar">
-        <div class="img"></div>
+      <div class="testimonial t-3">
+        <div class="avatar">
+          <div class="img"></div>
+        </div>
+        <div class="text">
+          <h3>Jake Paul</h3>
+          <p>
+            <q>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloribus incidunt temporibus, alias consequatur obcaecati magnam
+              harum. Cupiditate quae velit, molestias quisquam ullam quaerat
+              veniam corrupti ipsa. Dolores quisquam deleniti quos sequi? Quam
+              dolorem debitis inventore.</q
+            >
+          </p>
+        </div>
       </div>
-      <div class="text">
-        <h3>Hans Christian</h3>
-        <p>
-          <q>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-            incidunt temporibus, alias consequatur obcaecati magnam harum.
-            Cupiditate quae velit, molestias quisquam ullam quaerat veniam
-            corrupti ipsa. Dolores quisquam deleniti quos sequi? Quam dolorem
-            debitis inventore.</q
-          >
-        </p>
+      <div class="testimonial t-4">
+        <div class="avatar">
+          <div class="img"></div>
+        </div>
+        <div class="text">
+          <h3>Amy Santiago</h3>
+          <p>
+            <q>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloribus incidunt temporibus, alias consequatur obcaecati magnam
+              harum. Cupiditate quae velit, molestias quisquam ullam quaerat
+              veniam corrupti ipsa. Dolores quisquam deleniti quos sequi? Quam
+              dolorem debitis inventore.</q
+            >
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="testimonial t-3">
-      <div class="avatar">
-        <div class="img"></div>
-      </div>
-      <div class="text">
-        <h3>Jake Paul</h3>
-        <p>
-          <q>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-            incidunt temporibus, alias consequatur obcaecati magnam harum.
-            Cupiditate quae velit, molestias quisquam ullam quaerat veniam
-            corrupti ipsa. Dolores quisquam deleniti quos sequi? Quam dolorem
-            debitis inventore.</q
-          >
-        </p>
-      </div>
-    </div>
-    <div class="testimonial t-4">
-      <div class="avatar">
-        <div class="img"></div>
-      </div>
-      <div class="text">
-        <h3>Amy Santiago</h3>
-        <p>
-          <q>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
-            incidunt temporibus, alias consequatur obcaecati magnam harum.
-            Cupiditate quae velit, molestias quisquam ullam quaerat veniam
-            corrupti ipsa. Dolores quisquam deleniti quos sequi? Quam dolorem
-            debitis inventore.</q
-          >
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -77,9 +80,24 @@ $color-2: #bbbfca;
 $color-3: #e8e8e8;
 $color-4: #f4f4f2;
 $color-5: #ff3b3f;
+
+.testimonials {
+  background-color: $color-2;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 4rem;
+    color: $color-1;
+    margin-bottom: 4rem;
+  }
+}
+
 #testimonials {
   background-color: rgba($color: $color-2, $alpha: 1);
-  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

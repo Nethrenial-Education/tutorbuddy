@@ -5,6 +5,10 @@
 @import './variables';
 @import './reset';
 
+.container {
+  display: grid;
+
+}
 
 .xl-container {
   display: grid;
@@ -17,6 +21,12 @@
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem 1.5rem;
+  border: none;
+  font-family: 'Dosis', sans-serif;
+
+  &:focus {
+    outline: none;
+  }
 
   &-primary {
     background-color: $color-5;

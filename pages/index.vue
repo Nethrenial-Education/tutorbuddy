@@ -4,7 +4,9 @@
     <layout-showcase></layout-showcase>
     <layout-features></layout-features>
     <layout-testimonials></layout-testimonials>
+
     <layout-pricing></layout-pricing>
+    <layout-contact></layout-contact>
   </div>
 </template>
 
@@ -33,18 +35,23 @@ export default {}
   grid-row: 2 / span 1;
   height: 100vh;
 }
-#features {
+.features {
   grid-column: 2 / 12;
   grid-row: 3 / span 1;
 }
 
-#testimonials {
+.testimonials {
   grid-column: 1 / -1;
   grid-row: 4 / span 1;
 }
 
-#pricing {
+.pricing {
   grid-column: 2 / 12;
   grid-row: 5 / span 1;
+}
+
+.contact {
+  grid-column: 1 / -1;
+  grid-row: 6 / span 1;
 }
 </style>
