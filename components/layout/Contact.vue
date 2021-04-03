@@ -26,12 +26,6 @@
 </template>
 
 <style lang="scss" scoped>
-$color-1: #495464;
-$color-2: #bbbfca;
-$color-3: #e8e8e8;
-$color-4: #f4f4f2;
-$color-5: #ff3b3f;
-
 .contact {
   background-color: $color-2;
   padding: 4rem 1rem;
@@ -60,7 +54,7 @@ $color-5: #ff3b3f;
       justify-content: space-between;
       align-items: stretch;
       label {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-right: 3rem;
       }
 

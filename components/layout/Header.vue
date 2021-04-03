@@ -53,7 +53,7 @@ export default {
     clickHandler(event) {
       event.preventDefault()
       const href = event.target.getAttribute('href')
-      const offsetTop = document.querySelector(href).offsetTop - 100
+      const offsetTop = document.querySelector(href).offsetTop - 200
 
       scroll({
         top: offsetTop,
@@ -69,12 +69,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$color-1: #495464;
-$color-2: #bbbfca;
-$color-3: #e8e8e8;
-$color-4: #f4f4f2;
-$color-5: #ff3b3f;
-
 header#header {
   background-color: $color-4;
   position: fixed;
@@ -117,7 +111,8 @@ header#header {
         a {
           color: $color-1;
           padding: 1rem 2rem;
-          transition: all 0.1s linear;
+          transition: color 0.1s linear;
+          transition: border-bottom 0.5s ease-out;
           border-bottom: 5px solid transparent;
 
           &:hover,

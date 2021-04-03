@@ -21,12 +21,12 @@
 export default {
   data() {
     return {
-      phrase: '...',
+      phrase: ' |',
       phrases: [
         'Easily manage your classes',
         'Keep a record of every student',
         'Distribute study materials',
-        'Keep a track of student payments',
+        'Keep track of student payments',
         'Manage your income and costs',
         'Save money with our affordable plans',
       ],
@@ -38,24 +38,27 @@ export default {
   mounted() {
     setTimeout(() => {
       setInterval(() => {
-        if (this.phrase.length === this.phrases[this.phraseCount].length + 3) {
+        this.phrase = this.phrases[this.phraseCount].slice(0, this.count) + ' |'
+        if (this.count === this.phrases[this.phraseCount].length) {
+          this.count = 1
+        } else {
+          this.count++
+        }
+        if (this.phrase.length === this.phrases[this.phraseCount].length + 2) {
+          this.phrase = this.phrases[this.phraseCount] + ' |'
           if (this.phraseCount !== 5) {
             this.phraseCount++
           } else {
             this.phraseCount = 0
           }
         }
-        this.phrase =
-          this.phrases[this.phraseCount].slice(0, this.count) + '...'
-        if (this.count === this.phrases[this.phraseCount].length) {
-          this.count = 1
-        } else {
-          this.count++
-        }
-      }, 100)
+      }, 120)
     }, 1000)
   },
   methods: {
+    sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms))
+    },
     clickHandler(event) {
       event.preventDefault()
       const href = event.target.getAttribute('href')
@@ -75,11 +78,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$color-1: #495464;
-$color-2: #bbbfca;
-$color-3: #e8e8e8;
-$color-4: #f4f4f2;
-$color-5: #ff3b3f;
 section#showcase {
   background-image: linear-gradient(
       to bottom right,

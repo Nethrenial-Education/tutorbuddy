@@ -4,9 +4,10 @@
     <layout-showcase></layout-showcase>
     <layout-features></layout-features>
     <layout-testimonials></layout-testimonials>
-
     <layout-pricing></layout-pricing>
     <layout-contact></layout-contact>
+    <layout-about></layout-about>
+    <layout-footer></layout-footer>
   </div>
 </template>
 
@@ -15,14 +16,6 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.container {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) repeat(10, minmax(min-content, 120px)) minmax(
-      0,
-      1fr
-    );
-}
-
 //grid-template-rows: 6rem calc(100vh-6rem) repeat(20, 1fr);
 
 #header {
@@ -53,5 +46,15 @@ export default {}
 .contact {
   grid-column: 1 / -1;
   grid-row: 6 / span 1;
+}
+
+.about {
+  grid-column: 2 / 12;
+  grid-row: 7 / span 1;
+}
+
+#footer {
+  grid-column: 1 / -1;
+  grid-row: 8 / span 1;
 }
 </style>

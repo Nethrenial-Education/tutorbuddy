@@ -75,12 +75,6 @@
 </template>
 
 <style lang="scss" scoped>
-$color-1: #495464;
-$color-2: #bbbfca;
-$color-3: #e8e8e8;
-$color-4: #f4f4f2;
-$color-5: #ff3b3f;
-
 .testimonials {
   background-color: $color-2;
   padding: 4rem 1rem;
@@ -116,6 +110,12 @@ $color-5: #ff3b3f;
     align-items: center;
     border-radius: 1rem;
     background-color: #fff;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      box-shadow: 5px 0 10px rgba($color: $color-1, $alpha: 0.7);
+      transform: scale(1.02);
+    }
 
     &:nth-child(even) {
       flex-direction: row-reverse;
