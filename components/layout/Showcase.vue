@@ -37,7 +37,7 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      setInterval(() => {
+      const refreshIntervalId = setInterval(() => {
         this.phrase = this.phrases[this.phraseCount].slice(0, this.count) + ' |'
         if (this.count === this.phrases[this.phraseCount].length) {
           this.count = 1
@@ -49,16 +49,13 @@ export default {
           if (this.phraseCount !== 5) {
             this.phraseCount++
           } else {
-            this.phraseCount = 0
+            clearInterval(refreshIntervalId)
           }
         }
       }, 120)
     }, 1000)
   },
   methods: {
-    sleep(ms) {
-      return new Promise((resolve) => setTimeout(resolve, ms))
-    },
     clickHandler(event) {
       event.preventDefault()
       const href = event.target.getAttribute('href')

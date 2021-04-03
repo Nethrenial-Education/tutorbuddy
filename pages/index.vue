@@ -11,9 +11,7 @@
   </div>
 </template>
 
-<script>
-export default {}
-</script>
+<script></script>
 
 <style lang="scss" scoped>
 //grid-template-rows: 6rem calc(100vh-6rem) repeat(20, 1fr);
