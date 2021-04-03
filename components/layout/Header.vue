@@ -11,7 +11,9 @@
     <nav class="navigation">
       <ul>
         <li>
-          <nuxt-link to="/" name="home link">Home</nuxt-link>
+          <a href="#showcase" name="link to home" @click="clickHandler($event)"
+            >Home</a
+          >
         </li>
         <li>
           <a
@@ -44,13 +46,20 @@
         </li>
       </ul>
     </nav>
+    <div class="toggler" @click="toggle1">
+      <fa icon="bars" class="icon"></fa>
+    </div>
   </header>
 </template>
 
 <script>
 export default {
   methods: {
+    toggle1() {
+      this.$emit('toggle')
+    },
     clickHandler(event) {
+      this.isMenuVisible = !this.isMenuVisible
       event.preventDefault()
       const href = event.target.getAttribute('href')
       const offsetTop = document.querySelector(href).offsetTop - 200
@@ -59,10 +68,6 @@ export default {
         top: offsetTop,
         behavior: 'smooth',
       })
-
-      // document.querySelector(href).scrollIntoView({
-      //   behaviour: 'smooth',
-      // })
     },
   },
 }
@@ -70,59 +75,77 @@ export default {
 
 <style lang="scss" scoped>
 header#header {
-  background-color: $color-4;
-  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   z-index: 2;
-  box-shadow: 0.5rem 0 2rem #000;
-  .logo {
-    align-self: center;
-    grid-column: 2 / 5;
-    display: flex;
-    &-img {
-      align-self: center;
-      width: 4rem;
-      height: 4rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    &-text {
-      align-self: center;
-      margin-left: 3rem;
-      color: $color-1;
-      font-family: 'Lobster', cursive;
-      font-size: 4rem;
+  background-color: $color-4;
+  box-shadow: 0.5rem 0 1rem rgba($color: #000000, $alpha: 0.5);
+  position: fixed;
+  .toggler {
+    display: none;
+    height: 4rem;
+    width: 4rem;
+    background-color: $color-4;
+    margin-right: 2rem;
+    cursor: pointer;
+    .icon {
+      font-size: 3.8rem;
+      color: $color-5;
     }
   }
+
   .navigation {
-    align-self: center;
-    grid-column: 8 / 12;
     ul {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
       li {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-left: 1rem;
-
+        margin-right: 2rem;
         a {
+          font-size: 2rem;
           color: $color-1;
-          padding: 1rem 2rem;
-          transition: color 0.1s linear;
-          transition: border-bottom 0.5s ease-out;
-          border-bottom: 5px solid transparent;
+          border-bottom: 3px solid transparent;
+          padding: 1rem 1.5rem;
 
-          &:hover,
-          &:active,
-          &:focus {
+          &:hover {
+            border-bottom: 3px solid $color-5;
             color: $color-5;
-            border-bottom: 5px solid $color-5;
           }
         }
       }
+    }
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+
+    img {
+      height: 4rem;
+      width: 4rem;
+      margin: 1rem auto;
+    }
+
+    h1 {
+      font-family: 'Lobster', cursive;
+      font-size: 4rem;
+      margin-left: 4rem;
+      color: $color-1;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header#header {
+    .toggler {
+      display: block;
+    }
+
+    .navigation {
+      display: none;
     }
   }
 }

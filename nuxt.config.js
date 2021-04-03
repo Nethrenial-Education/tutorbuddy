@@ -51,6 +51,7 @@ export default {
               'faBookReader',
               'faCoins',
               'faMobile',
+              'faBars',
             ],
           },
           {

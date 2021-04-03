@@ -11,15 +11,16 @@
       0,
       1fr
     );
-  grid-template-rows: repeat(8, min-content);
+  grid-template-rows: 6rem repeat(7, min-content);
 }
 
-.xl-container {
-  display: grid;
-  grid-template-columns:
-    minmax(3rem, 1fr) repeat(10, minmax(min-content, 140px))
-    minmax(3rem, 1fr);
-}
+// .xl-container {
+//   margin: 0 auto;
+//   display: grid;
+//   grid-template-columns:
+//     minmax(3rem, 1fr) repeat(10, minmax(min-content, 140px))
+//     minmax(3rem, 1fr);
+// }
 
 .btn {
   font-size: 2rem;

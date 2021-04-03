@@ -120,7 +120,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     .icon {
       font-size: 10rem;
@@ -147,6 +148,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #features {
+    grid-template-columns: 1fr;
   }
 }
 </style>
