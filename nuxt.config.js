@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'TutorBuddy | Best Friend Of Tutors',
+    title: 'TutorBuddy | Best Friend Of Tutors | Home',
     htmlAttrs: {
       lang: 'en',
     },
@@ -12,11 +12,11 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "TutorBuddy let's you manage your students profiles easily.Managing Your income,costs and distributing resources to your students is now easier than ever!",
+          "TutorBuddy let's you manage your students profiles easily.Being a tutor is now easier than ever!",
       },
       {
         property: 'og:title',
-        content: 'TutorBuddy | Best Friend Of Tutors',
+        content: 'TutorBuddy | Best Friend Of Tutors | Home',
       },
       {
         property: 'og:url',
@@ -33,7 +33,7 @@ export default {
       {
         property: 'og:description',
         content:
-          "TutorBuddy let's you manage your students profiles easily.Managing Your income,costs and distributing resources to your students is now easier than ever!",
+          "TutorBuddy let's you manage your students profiles easily.Being a tutor is now easier than ever!",
       },
       {
         name: 'twitter:card',
@@ -94,11 +94,18 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    '@nuxtjs/robots',
     '@nuxtjs/sitemap',
   ],
   styleResources: {
     scss: ['./assets/scss/main.scss'],
   },
+
+  robots: {
+    UserAgent: '*',
+    Allow: '/',
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
