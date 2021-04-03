@@ -85,8 +85,8 @@
           one huge benefit of using the mobile app as they let you add data even
           when you're offline.Then the documents will be updated the next time
           you go online. <br />
-          <a href="/download">DOWNLOAD FOR ANDROID &rightarrow;</a> <br />
-          <a href="/download">DOWNLOAD FOR IOS &rightarrow;</a>
+          <a href="/">DOWNLOAD FOR ANDROID &rightarrow;</a> <br />
+          <a href="/">DOWNLOAD FOR IOS &rightarrow;</a>
         </p>
       </div>
     </section>

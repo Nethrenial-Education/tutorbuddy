@@ -1,7 +1,7 @@
 <template>
   <section id="showcase">
-    <h1><span>Tutor</span>Buddy</h1>
-    <h2>{{ phrase }}</h2>
+    <h2 class="h1"><span>Tutor</span>Buddy</h2>
+    <h2 class="h2">{{ phrase }}</h2>
     <div class="buttons">
       <a
         href="#features"
@@ -10,9 +10,7 @@
         @click="clickHandler($event)"
         >Learn More</a
       >
-      <a href="/download" class="btn btn-primary" name="click to download"
-        >Download</a
-      >
+      <a href="/" class="btn btn-primary" name="click to download">Download</a>
     </div>
   </section>
 </template>
@@ -90,7 +88,7 @@ section#showcase {
   align-items: center;
   height: calc(100vh - 6rem);
 
-  h1 {
+  .h1 {
     backface-visibility: hidden;
     font-family: 'Lobster', curc;
     font-size: 8.2rem;
@@ -104,7 +102,7 @@ section#showcase {
     }
   }
 
-  h2 {
+  .h2 {
     font-family: 'Stick';
     font-size: 3.6rem;
     text-align: center;

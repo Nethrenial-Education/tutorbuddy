@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'TutorBuddy',
+    title: 'TutorBuddy | Best Friend Of Tutors',
     htmlAttrs: {
       lang: 'en',
     },
@@ -14,6 +14,31 @@ export default {
         content:
           "TutorBuddy let's you manage your students profiles easily.Managing Your income,costs and distributing resources to your students is now easier than ever!",
       },
+      {
+        property: 'og:title',
+        content: 'TutorBuddy | Best Friend Of Tutors',
+      },
+      {
+        property: 'og:url',
+        content: 'https://tutorbuddy.vercel.app',
+      },
+      {
+        property: 'og:image',
+        content: 'https://tutorbuddy.vercel.app/images/hero-optimized-min.jpg',
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:description',
+        content:
+          "TutorBuddy let's you manage your students profiles easily.Managing Your income,costs and distributing resources to your students is now easier than ever!",
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
     ],
     link: [
       {
@@ -21,6 +46,7 @@ export default {
         type: 'image/png',
         href: '/images/icon.png',
       },
+      { rel: 'canonical', href: 'https://tutorbuddy.vercel.app' },
     ],
   },
 
@@ -68,6 +94,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap',
   ],
   styleResources: {
     scss: ['./assets/scss/main.scss'],
