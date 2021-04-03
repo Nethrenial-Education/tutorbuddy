@@ -236,4 +236,10 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1001px) {
+  .menu-overlay {
+    display: none;
+    z-index: -1;
+  }
+}
 </style>

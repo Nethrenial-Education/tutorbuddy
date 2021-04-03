@@ -12,7 +12,9 @@
           while you're just starting out.And believe it or not,It's completely
           free upto the first 50 students! Even from there,pricing is really
           affordable for what this tool offers you.
-          <a href="#pricing">CHECK OUT THE PRICING</a>&rightarrow;
+          <a href="#pricing" @click="clickHandler($event)"
+            >CHECK OUT THE PRICING</a
+          >&rightarrow;
         </p>
       </div>
       <div class="feature">
@@ -36,10 +38,11 @@
           student?Maybe you want to restrict them to students who already paid
           the fees.With "TutorBuddy" it's really simple!Easily share pdf
           files,images and even videos(*conditions apply
-          <a href="#pricing">CHECK OUT THE PRICING</a>&rightarrow; for more
-          details.) to all of your students at once.Students will be given there
-          own accounts.They just need to log into their account and download
-          them.
+          <a href="#pricing" @click="clickHandler($event)"
+            >CHECK OUT THE PRICING</a
+          >&rightarrow; for more details.) to all of your students at
+          once.Students will be given there own accounts.They just need to log
+          into their account and download them.
         </p>
       </div>
       <div class="feature">
@@ -67,7 +70,9 @@
           the end of the month, this tool will calculate your profit by
           deducting all your costs from the sum of all of the student
           payments.And will keep a record of every month!Isn't it wonderful???
-          <a href="#pricing">CHECK OUT THE PRICING</a>&rightarrow;
+          <a href="#pricing" @click="clickHandler($event)"
+            >CHECK OUT THE PRICING</a
+          >&rightarrow;
         </p>
       </div>
       <div class="feature">
@@ -87,6 +92,24 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    clickHandler(event) {
+      this.isMenuVisible = !this.isMenuVisible
+      event.preventDefault()
+      const href = event.target.getAttribute('href')
+      const offsetTop = document.querySelector(href).offsetTop - 200
+
+      scroll({
+        top: offsetTop,
+        behavior: 'smooth',
+      })
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .features {
