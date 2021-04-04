@@ -47,6 +47,12 @@ export default {
         href: '/images/icon.png',
       },
       { rel: 'canonical', href: 'https://tutorbuddy.vercel.app' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis:wght@400;700&family=Lobster&display=swap',
+      },
     ],
   },
 
@@ -78,6 +84,7 @@ export default {
               'faCoins',
               'faMobile',
               'faBars',
+              'faTimes',
             ],
           },
           {

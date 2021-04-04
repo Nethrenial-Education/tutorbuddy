@@ -151,11 +151,11 @@ export default {
       li {
         margin-bottom: 1rem;
         padding: 1rem 2rem;
-        background-color: $color-5;
         a {
           color: $color-3;
-          font-size: 2rem;
-          font-family: 'Stick', sans-serif;
+          font-size: 3rem;
+          font-weight: bold;
+          font-family: $font-secondary;
           &:hover,
           &:active {
             color: #fff;

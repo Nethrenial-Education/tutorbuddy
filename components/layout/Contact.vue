@@ -33,7 +33,7 @@
   flex-direction: column;
 
   h2 {
-    font-family: 'Lobster', cursive;
+    font-family: $font-logo;
     text-align: center;
     font-size: 4rem;
     color: $color-1;
@@ -41,7 +41,7 @@
   }
 }
 #contact {
-  font-family: 'Dosis', sans-serif;
+  font-family: $font-primary;
 
   form {
     max-width: 1200px;

@@ -46,7 +46,7 @@
   flex-direction: column;
 
   h2 {
-    font-family: 'Lobster', cursive;
+    font-family: $font-logo;
     text-align: center;
     font-size: 4rem;
     color: $color-1;
@@ -78,7 +78,7 @@
 
     h3 {
       font-size: 3rem;
-      font-family: 'Stick';
+      font-family: $font-secondary;
       border-radius: 20px 20px 0 0;
       text-align: center;
       width: 100%;

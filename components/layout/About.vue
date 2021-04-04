@@ -52,7 +52,7 @@
   flex-direction: column;
 
   h2 {
-    font-family: 'Lobster', cursive;
+    font-family: $font-logo;
     text-align: center;
     font-size: 4rem;
     color: $color-1;

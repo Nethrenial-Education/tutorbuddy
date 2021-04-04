@@ -90,7 +90,7 @@ section#showcase {
 
   .h1 {
     backface-visibility: hidden;
-    font-family: 'Lobster', curc;
+    font-family: $font-logo;
     font-size: 8.2rem;
     color: $color-4;
     text-align: center;
@@ -103,7 +103,7 @@ section#showcase {
   }
 
   .h2 {
-    font-family: 'Stick';
+    font-family: $font-secondary;
     font-size: 3.6rem;
     text-align: center;
     color: $color-4;
@@ -144,6 +144,22 @@ section#showcase {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-height: 320px) {
+  section#showcase {
+    .h1 {
+      font-size: 5rem;
+    }
+    .h2 {
+      font-size: 2.2rem;
+    }
+    .buttons {
+      .btn {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
 </style>

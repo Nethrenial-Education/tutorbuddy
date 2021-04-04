@@ -82,7 +82,7 @@
   flex-direction: column;
 
   h2 {
-    font-family: 'Lobster', cursive;
+    font-family: $font-logo;
     text-align: center;
     font-size: 4rem;
     color: $color-1;
@@ -134,7 +134,7 @@
       margin: auto 3rem;
       h3 {
         margin-bottom: 2rem;
-        font-family: 'Stick';
+        font-family: $font-secondary;
         font-size: 3rem;
         color: $color-1;
       }

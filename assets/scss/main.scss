@@ -1,7 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
-@import './fonts';
 @import './variables';
 @import './reset';
 
@@ -14,20 +10,12 @@
   grid-template-rows: 6rem repeat(7, min-content);
 }
 
-// .xl-container {
-//   margin: 0 auto;
-//   display: grid;
-//   grid-template-columns:
-//     minmax(3rem, 1fr) repeat(10, minmax(min-content, 140px))
-//     minmax(3rem, 1fr);
-// }
-
 .btn {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem 1.5rem;
   border: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: $font-primary;
 
   &:focus {
     outline: none;

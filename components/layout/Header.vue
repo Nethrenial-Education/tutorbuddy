@@ -47,15 +47,30 @@
       </ul>
     </nav>
     <div class="toggler" @click="toggle1">
-      <fa icon="bars" class="icon"></fa>
+      <fa :icon="togglerIcon" class="icon"></fa>
     </div>
   </header>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isMenuVisible: false,
+    }
+  },
+  computed: {
+    togglerIcon() {
+      if (!this.isMenuVisible) {
+        return 'bars'
+      } else {
+        return 'times'
+      }
+    },
+  },
   methods: {
     toggle1() {
+      this.isMenuVisible = !this.isMenuVisible
       this.$emit('toggle')
     },
     clickHandler(event) {
@@ -103,9 +118,11 @@ header#header {
         margin-right: 2rem;
         a {
           font-size: 2rem;
+          font-weight: bold;
           color: $color-1;
           border-bottom: 3px solid transparent;
           padding: 1rem 1.5rem;
+          transition: color 0.2s ease-out, border-bottom 0.5s ease-out;
 
           &:hover {
             border-bottom: 3px solid $color-5;
@@ -130,7 +147,7 @@ header#header {
     }
 
     h1 {
-      font-family: 'Lobster', cursive;
+      font-family: $font-logo;
       font-size: 4rem;
       margin-left: 4rem;
       color: $color-1;

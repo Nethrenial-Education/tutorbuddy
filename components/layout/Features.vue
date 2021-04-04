@@ -118,7 +118,7 @@ export default {
   flex-direction: column;
 
   h2 {
-    font-family: 'Lobster', cursive;
+    font-family: $font-logo;
     text-align: center;
     font-size: 4rem;
     color: $color-1;
@@ -152,7 +152,7 @@ export default {
     }
 
     h2 {
-      font-family: 'Stick';
+      font-family: $font-secondary;
       font-size: 3rem;
       text-align: center;
     }
