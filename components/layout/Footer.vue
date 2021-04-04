@@ -5,16 +5,16 @@
         href="https://facebook.com/nethsara.sandeepa"
         name="Link to my FB profile"
       >
-        <fa :icon="['fab', 'facebook']" class="icon"></fa
+        <fa :icon="['fab', 'facebook']" class="icon" nam="facebook"></fa
       ></a>
       <a href="https://twitter.com" name="Link to my twitter account.">
-        <fa :icon="['fab', 'twitter']" class="icon"></fa
+        <fa :icon="['fab', 'twitter']" class="icon" name="twitter"></fa
       ></a>
       <a
         href="https://github.com/Nethrenial-Education"
         name="Link to my Github"
       >
-        <fa :icon="['fab', 'github']" class="icon"></fa
+        <fa :icon="['fab', 'github']" class="icon" name="github"></fa
       ></a>
     </div>
     <p>&copy; 2021 - All Rights Reserved.</p>
