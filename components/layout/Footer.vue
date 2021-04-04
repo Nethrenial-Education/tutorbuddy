@@ -1,13 +1,19 @@
 <template>
   <footer id="footer" class="xl-container">
     <div class="icons">
-      <a href="https://facebook.com">
+      <a
+        href="https://facebook.com/nethsara.sandeepa"
+        name="Link to my FB profile"
+      >
         <fa :icon="['fab', 'facebook']" class="icon"></fa
       ></a>
-      <a href="https://twitter.com">
+      <a href="https://twitter.com" name="Link to my twitter account.">
         <fa :icon="['fab', 'twitter']" class="icon"></fa
       ></a>
-      <a href="https://github.com">
+      <a
+        href="https://github.com/Nethrenial-Education"
+        name="Link to my Github"
+      >
         <fa :icon="['fab', 'github']" class="icon"></fa
       ></a>
     </div>
